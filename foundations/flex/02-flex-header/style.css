@@ -1,6 +1,10 @@
 .header  {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   font-family: monospace;
   background: papayawhip;
+  padding: 12px 0px;
 }
 
 .logo {
@@ -12,6 +16,10 @@
 }
 
 ul {
+  display: flex;
+  gap: 12px;
+  padding: 8px;
+  margin: 0;
   /* this removes the dots on the list items*/
   list-style-type: none;
 }
@@ -23,3 +31,12 @@ a {
   /* this removes the line under the links */
   text-decoration: none;
 }
+
+/* This is redundant when we have justify-content: space-between in the .header */
+/*.left-links {
+  margin-right: auto;
+}
+
+.right-links {
+  margin-left: auto;
+}*/
