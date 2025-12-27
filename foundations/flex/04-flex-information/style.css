@@ -12,6 +12,37 @@ img {
   font-weight: 900;
 }
 
+.items {
+  display: flex;
+  justify-content: center;
+  gap: 52px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 200px;
+}
+
+.text {
+  text-align: center;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  /*padding: 32px;*/
+  /* Only need to margin the bottom */
+  margin-bottom: 32px;
+}
+
+/* Key differences to the solution
+  - Solution has a global text align on <body>
+  - Solution doesn't use a column flex-direction due to that global text align
+  - Vertical spacing is slightly off
+  - Solution is generally more elegant*/
+
 /* do not edit this footer */
 .footer {
   position: fixed;
