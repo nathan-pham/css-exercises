@@ -16,10 +16,30 @@ body {
 }
 
 .modal {
+  padding: 16px;
+  display: flex;
+  gap: 16px;
   background: white;
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+}
+
+.modal-main {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+/* An alternative way of specifying the vertical height is to add
+  a margin-bottom to the .header and the .text
+  This would be a better solution in that you can specify different
+  gaps between different divs instead of giving it a global size */
+
+.header{
+  display: flex;
+  font-weight: bold;
+  font-size: 20px;
+  align-items: center;
 }
 
 .icon {
@@ -33,6 +53,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .close-button {
@@ -48,6 +69,7 @@ body {
   justify-content: center;
   border: 1px solid #eee;
   padding: 0;
+  margin-left: auto;
 }
 
 button {
